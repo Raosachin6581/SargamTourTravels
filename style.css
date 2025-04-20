@@ -23,9 +23,10 @@
 }
 
 .logo{
-    width: 200px;
+    width: 150px;
     cursor: pointer;
     margin: 30px 0;
+    border-radius: 60px;
 }
 
 .menu-icon{
@@ -47,13 +48,13 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    color: #0e0c0c;
+    color: #dcd4d4;
     font-size: 18px;
     font-weight: bold;
 }
 
 nav ul li a:hover{
-    color: #e40f0f;
+    color: #67070b;
 }
 
 
@@ -70,12 +71,12 @@ nav ul li a:hover{
 }
 .col-1 h2{
     font-size: 54px;
-    color: #0a0909;
+    color: #eeeaea;
     }
     
     .col-1 h3{
         font-size: 30px;
-        color: #090808;
+        color: #efebeb;
         font-weight: 100;
         margin: 20px 0 10px;
         }
@@ -83,7 +84,7 @@ nav ul li a:hover{
     
         .col-1 p{
             font-size: 16px;
-            color: #0f0d0d;
+            color: #f5f3f3;
             font-weight: 100;
         }
     
@@ -92,8 +93,11 @@ nav ul li a:hover{
             border: 0;
             padding: 12px 10px;
             outline: none;
-            color: #dc0b0be5;
-            background: linear-gradient(to right, #1fa2ff 0%,#12d8fa 51%, #1fa2ff 100%);
+            color: yellow;
+            background: linear-gradient(to right, yellow 0%,orange 51%);
+            
+        
+         
             border-radius: 6px;
             cursor: pointer;
             transition: width 0.5s;
@@ -161,9 +165,10 @@ nav ul li a:hover{
 
 
            .header{
-            background-color: #ffdad5;
-            background-image: linear-gradient(#ffdad5,#fff7f9);
             
+            background-color: #09203F;
+background-image: linear-gradient(62deg, #09203F 0%,  #537895 100%);
+
 
            }
 
@@ -363,8 +368,8 @@ background-image: linear-gradient(147deg, grey 0%, white 74%);
   /*responsive*/
   @media only screen and (max-width:700px){
     nav ul{
-        width: 100%;
-        background: linear-gradient(grey,white);
+        width: 20%;
+        background: linear-gradient(yellow,orange);
         position: absolute;
         top: 75px;
         right: 0;
@@ -378,7 +383,7 @@ background-image: linear-gradient(147deg, grey 0%, white 74%);
     }
 
     nav ul li a{
-        color: #3313c4;
+        color: #03010c;
     }
 
     .menu-icon{
@@ -473,8 +478,9 @@ background-image: linear-gradient(147deg, grey 0%, white 74%);
       }
 
       .lg{
-        width: 80px;
+        width: 70px;
         margin-bottom: 30px;
+        border-radius: 70px;
       }
 
       .cl h3{
