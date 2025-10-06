@@ -1,0 +1,115 @@
+
+
+.glass-card {
+    max-width: 500px;
+    margin: 10vh auto;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding: 2.5rem 2rem;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+}
+
+.glass-card h1 {
+    color: #0077b6;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.glass-card p {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #87ceeb;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(135, 206, 235, 0.2);
+    transition: background 0.2s;
+}
+
+.cta-btn:hover {
+    background: #00b4d8;
+}
+
+@media (max-width: 600px) {
+    .glass-card {
+        max-width: 90vw;
+        padding: 1.5rem 1rem;
+    }
+    .glass-card h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ...existing code... */
+.glass-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.15);
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .glass-img {
+        max-width: 90vw;
+        margin-bottom: 1rem;
+    }
+}
+/* ...existing code... */
+
+/* ...existing code... */
+ .main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 8vh;
+    flex-wrap: wrap;
+} 
+
+.side-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.side-img {
+    width: 100%;
+    max-width: 90vw;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .main-flex {
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .side-img {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+/* ...existing code... */

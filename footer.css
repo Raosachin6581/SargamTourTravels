@@ -1,0 +1,77 @@
+/* Add to main.css or a relevant CSS file */
+.glass-footer {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(8px);
+  border-radius: 16px 16px 0 0;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  color: #222;
+  margin-top: 40px;
+  padding: 24px 16px 8px 16px;
+  font-size: 1em;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.95em;
+}
+.footer-social a {
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+.footer-social a:hover {
+  transform: scale(1.15);
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.95em;
+  color: #444;
+  opacity: 0.8;
+}
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .glass-footer {
+    padding: 18px 8px 6px 8px;
+    font-size: 0.98em;
+  }
+}
+
+/* ...existing code... */
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+.footer-social a {
+  margin-right: 16px;
+  font-size: 2em;
+  color: #222;
+  transition: transform 0.2s, color 0.2s;
+}
+.footer-social a:last-child {
+  margin-right: 0;
+}
+.footer-social a:hover {
+  transform: scale(1.15);
+  color: #2196f3;
+}
+/* ...existing code... */

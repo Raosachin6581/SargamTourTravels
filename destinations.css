@@ -1,0 +1,150 @@
+/* Destinations Section Styles */
+.destinations-section {
+  background: linear-gradient(135deg, #e3f6fd 60%, #fff 100%);
+  padding: 60px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destinations-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2196f3;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeInDown 1s;
+}
+
+.destinations-wrapper {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeInUp 1.2s;
+}
+
+.destination-card.glass {
+  background: rgba(255,255,255,0.6);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(33,150,243,0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(33,150,243,0.18);
+  min-width: 220px;
+  max-width: 280px;
+  padding: 18px 14px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  animation: cardFadeIn 1s forwards;
+}
+
+.destination-card.glass:hover {
+  box-shadow: 0 16px 48px 0 rgba(33,150,243,0.22);
+  transform: translateY(-8px) scale(1.04);
+  background: rgba(255,255,255,0.8);
+}
+
+.destination-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.destination-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.destination-icon {
+  font-size: 1.8rem;
+}
+
+.destination-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .destinations-wrapper {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .destination-card.glass {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+/* ...existing code... */
+
+.destination-card.glass {
+  /* ...existing code... */
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  animation: cardFadeIn 1s forwards;
+}
+
+.destination-card.glass:hover {
+  box-shadow: 0 24px 64px 0 rgba(33,150,243,0.28); /* Increased shadow */
+  transform: translateY(-12px) scale(1.08);         /* Increased scale */
+  background: rgba(255,255,255,0.9);
+  z-index: 2;
+}
+
+.destination-img {
+  width: 100%;
+  height: 180px;           /* Increased image height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;     /* Slightly increased margin */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .destinations-wrapper {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .destination-card.glass {
+    width: 95%;
+    max-width: 420px;      /* Slightly larger max width */
+  }
+  .destination-img {
+    height: 140px;         /* Responsive image size */
+  }
+}
+
+@media (max-width: 600px) {
+  .destination-card.glass {
+    min-width: 180px;
+    max-width: 98vw;
+    padding: 14px 8px;
+  }
+  .destination-img {
+    height: 100px;
+  }
+}
+
+.destination-card.glass.hovered {
+  box-shadow: 0 24px 64px 0 rgba(33,150,243,0.28);
+  transform: translateY(-12px) scale(1.08);
+  background: rgba(255,255,255,0.9);
+  z-index: 2;
+}
+
+/* ...existing code... */

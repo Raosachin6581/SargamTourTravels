@@ -1,0 +1,45 @@
+/* ...existing code... */
+
+.glass-map {
+  background: linear-gradient(135deg, #e3f6fd 60%, #ffffff 100%);
+  box-shadow: 0 8px 32px 0 rgba(31, 115, 183, 0.15);
+  border-radius: 24px;
+  padding: 32px 16px;
+  margin: 40px auto;
+  max-width: 700px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(135, 206, 250, 0.18);
+}
+
+.map-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2196f3;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.7);
+  border-radius: 18px;
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  .glass-map {
+    padding: 16px 4px;
+    max-width: 98vw;
+  }
+  .map-title {
+    font-size: 1.3rem;
+  }
+  .map-wrapper iframe {
+    height: 200px;
+  }
+}
+
+/* ...existing code... */

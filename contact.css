@@ -1,0 +1,187 @@
+  #contact.page {
+    padding: 60px 0 60px 0;
+    background: none;
+    min-height: 100vh;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #007acc;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    /* Increased max-width for wider layout */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px; /* increased horizontal padding */
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 48px 0 rgba(74, 144, 226, 0.10), 0 1.5px 14px rgba(0, 60, 150, 0.03);
+    backdrop-filter: blur(18px);
+    width: 95vw; /* Ensures near-full width responsiveness */
+  }
+
+  .contact-images {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    max-width: 360px; /* slightly wider */
+  }
+
+  .contact-img {
+    width: 98%;
+    max-width: 270px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 122, 204, 0.14);
+    background: rgba(255,255,255,0.6);
+    padding: 10px;
+    object-fit: contain;
+    border: 1.5px solid #b3e5fc;
+  }
+
+  .features-grid.contact-features {
+    flex: 2.5 1 520px; /* grows more, min-width increased */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    width: 100%;
+    align-items: stretch;
+    justify-items: center;
+  }
+
+  .feature-card {
+    background: rgba(245, 255, 255, 0.72);
+    border-radius: 20px;
+    padding: 38px 26px 32px 26px;
+    box-shadow: 0 8px 36px 0 rgba(74, 144, 226, 0.08);
+    text-align: center;
+    min-width: 0;
+    max-width: 400px;
+    border: 1.5px solid #81d4fa;
+    transition: transform 0.15s, box-shadow 0.15s;
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  .feature-card:hover {
+    transform: translateY(-8px) scale(1.035);
+    box-shadow: 0 16px 40px 0 rgba(0, 122, 204, 0.14);
+  }
+
+  .feature-icon {
+    font-size: 2.6rem;
+    margin-bottom: 16px;
+    color: #0288d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+  }
+  .feature-icon a {
+    color: #0288d1;
+    text-decoration: none !important;
+    transition: color 0.13s;
+  }
+  .feature-icon a:hover {
+    color: #01579b;
+  }
+
+  .feature-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #01579b;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .feature-description {
+    color: #333;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    opacity: 0.85;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1300px) {
+    .contact-wrapper {
+      max-width: 98vw;
+      padding: 26px 8px;
+    }
+    .features-grid.contact-features {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .contact-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 4vw;
+      gap: 24px;
+    }
+    .contact-images {
+      flex-direction: row;
+      gap: 14px;
+      min-width: 0;
+      max-width: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+    .contact-img {
+      max-width: 140px;
+    }
+    .features-grid.contact-features {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: 700px) {
+    .page-title {
+      font-size: 2.1rem;
+      margin-bottom: 20px;
+    }
+    .contact-wrapper {
+      padding: 3px 2vw;
+      gap: 12px;
+      border-radius: 14px;
+    }
+    .contact-images {
+      gap: 7px;
+      flex-direction: row;
+      width: 100%;
+    }
+    .contact-img {
+      max-width: 85px;
+      padding: 4px;
+      border-radius: 10px;
+    }
+    .features-grid.contact-features {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .feature-card {
+      padding: 14px 6px 12px 6px;
+      border-radius: 9px;
+      max-width: 98vw;
+    }
+    .feature-title {
+      font-size: 1rem;
+    }
+    .feature-description {
+      font-size: 0.93rem;
+    }
+  }
